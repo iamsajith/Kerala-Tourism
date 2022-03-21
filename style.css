@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Qwigley&display=swap');
+
 *{
  margin: 0;
  padding: 0;
 }
+:root{
+--forum-bg : linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+}
+
 #slideBG:hover{opacity: 1;}
 #slideBG{
  width: 100%;
@@ -28,7 +34,7 @@
  border: 2px transparent white;
 }
 .btn:hover{
- background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+ background: var(--forum-bg);
  color: black;
 }
 
@@ -40,10 +46,10 @@
 }
 
 #login{
- background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+ background: var(--forum-bg);
 }
 .form-control{
- background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+ background: var(--forum-bg);
  border-bottom-left-radius: 0%;
  border-top-right-radius: 0%;
 }
@@ -63,6 +69,12 @@
 body{
  font-family: 'Montserrat';
 }
+.nav-item{
+ font-weight: 700;
+ font-family: 'Montserrat', sans-serif;
+
+
+}
 .nav-item:hover{
  background-color:rgb(216, 107, 107)
 }
@@ -78,7 +90,8 @@ body{
 }
 
 .img-text{
- color:black;
+ color:rgb(0, 0, 0);
+
 }
 
 nav{
