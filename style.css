@@ -7,7 +7,10 @@
 :root{
 --forum-bg : linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
 }
-
+body{
+ font-family: 'Montserrat';
+}
+/* starting-page */
 #slideBG:hover{opacity: 1;}
 #slideBG{
  width: 100%;
@@ -21,7 +24,6 @@
  animation-timing-function: ease-in-out;
  background-image: url('./Images/1st/1635201.jpg');
 }
-
 @keyframes slideBg{
 0% {background-image: url('./Images/1st/1635237.jpg')}
 25% {background-image: url('./Images/1st/1635217.jpg')}
@@ -30,12 +32,7 @@
 100% {background-image: url('./Images/1st/1635201.jpg');}
 }
 .btn{
- margin-top: 20%;
- border: 2px transparent white;
-}
-.btn:hover{
- background: var(--forum-bg);
- color: black;
+ margin-top: 10%;
 }
 
 #district{
@@ -44,6 +41,8 @@
  background-color: #eee;
  padding: 2em;
 }
+
+/* form */
 
 #login{
  background: var(--forum-bg);
@@ -54,20 +53,62 @@
  border-top-right-radius: 0%;
 }
 
+.control input:focus{
+ outline: 0;
+ border-color: #777;
+}
+.control.success input{
+ border-color: #2ecc71;
+}
+.control.error input{
+ border-color: #e74c3c;
+}
+.control{
+ position: relative;
+}
+.control small{
+ font-size: small;
+ color: #e74c3c;
+ visibility: hidden;
+}
+.control.error small{
+ visibility: hidden;
+ position: absolute;
+ bottom: 0;
+ left: 0;
+}
+
+#checkmark1,#checkmark2{
+ position: absolute;
+ right: 3%;
+ top: 18%;
+ visibility: hidden;
+}
+#checkmark1.success{
+ visibility: visible;
+ color: #2ecc71;
+}
+#checkmark2.error{
+ visibility: visible;
+ color:#e74c3c
+}
+
+
 .margin-all{
  margin-top: 100px;
 }
+
+
 #places{
  width: 100%;
  height: 50%;
 }
+
+/* navigation-bar */
 .navbar-brand{
  font-family: 'Qwigley', cursive;
  font-weight: bold;
  font-size: 2rem;
-}
-body{
- font-family: 'Montserrat';
 }
 .nav-item{
  font-weight: 700;
@@ -191,4 +232,48 @@ nav{
 
 ::-webkit-scrollbar-thumb:hover {
  background: rgb(36, 35, 35); 
+}
+
+.form {
+	padding: 30px 40px;	
+}
+
+.control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+
+.control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.control.success input {
+	border-color: #2ecc71;
+}
+
+.control.error input {
+	border-color: #e74c3c;
+}
+.control{
+ position: relative;
+}
+
+.control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.control.error small {
+	visibility: visible;
 }

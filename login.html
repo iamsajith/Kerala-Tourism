@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Login</title>
- <link rel="icon" type="image/x-icon" href="Images\island.png">
- <!-- CSS only -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="icon" type="image/x-icon" href="Images\island.png">
+<!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -16,8 +16,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body background="https://cdn.wallpapersafari.com/48/28/Qt73Hz.jpg" >
- 
- <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
   <div class="container">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -29,11 +28,10 @@
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="login.html"><strong>Login</strong></a>
-         </li>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="signup.html"><strong>Sign Up</strong></a>
-         </li>
-         
+        </li>
       </ul>
     </div>
   </div>
@@ -46,20 +44,14 @@
             <h1 class="h3 mb-3 font-weight-normal text-center" style="padding-bottom: 12%;">LOGIN</h1>
             <div class="control">
               <label for="emailAddress" class="sr-only">Email Address</label>
-              <input type="email" id="emailAddress" class="form-control" placeholder="Email Address" required autofocus>
-              <i class="fas fa-check" style="color: green;"></i>
-              <i class="fas fa-times"style="color: red;"></i>
-              <small class="valid-status" style="color: red;"><em>Email can't be blank</em> </small>
+              <input class="form-control" type="email" placeholder="E-mail" id="email" />
+              <small class="valid-status"><em>Email can't be blank</em> </small>
             </div>
             <div class="control">
               <label for="password" class="sr-only">Password</label>
-              <input type="password" id="password" placeholder="Password" class="form-control">
-              <i class="fas fa-check" style="color: green;"></i>
-              <i class="fas fa-times"style="color: red;"></i>
-              <small class="valid-status" style="color: red;"><em>Password can't be blank</em> </small>
-            </div>          
-            
-            
+              <input class="form-control" type="password" placeholder="Password" id="password"/>
+              <small class="valid-status"><em>Password can't be blank</em> </small>
+            </div>
             <div class="checkbox mt-3" >
               <div class="row">
                 <div class="col text-center">
@@ -69,21 +61,15 @@
                   <a href="" style="text-decoration: none;">Forgot Password</a>
                 </div>
               </div>
-              
-              
             </div>
-                
-               
               <button class="btn btn-lg btn-primary btn-block" style="padding-top:0 ;width: 100%;">Login</button>
-            
-            
           </form>
         </div>
         <div class="col-md"></div>
       </div>
     </div>
 </div>
-
-<script src="index.js"></script>
+<script src="login.js">
+</script>
 </body>
 </html>
