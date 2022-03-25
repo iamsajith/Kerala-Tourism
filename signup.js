@@ -109,3 +109,42 @@ function setSuccessFor(input) {
 	const formControl = input.parentElement;
 	formControl.className = 'control success';
 }
+
+password.addEventListener('keyup', function(){
+  checkPassword(password.value);
+})
+function checkPassword(password){
+  var strengthBar = document.getElementById('strength');
+  var strength = 0;
+  if (password.match(/[A-Z]+/)){
+    strength ++;
+  }
+  if (password.match(/[a-z]+/)){
+    strength ++;
+  }
+  if (password.match(/[0-9]+/)){
+    strength ++;
+  }
+  if (password.match(/[~<>?!@#$%^&*(){}|:".,;']+/)){
+    strength ++;
+  }
+  if (password.length >= 8){
+    strength ++;
+  }
+  switch(strength){
+    case 0: strengthBar.value = 0;
+            break
+    case 1: strengthBar.value = 20;
+            strengthBar.innerHTML="Weak"
+            break
+    case 2: strengthBar.value = 40;
+            break
+    case 3: strengthBar.value = 60;
+            break
+    case 4: strengthBar.value = 80;
+            break
+    case 5: strengthBar.value = 100;
+            break
+  }
+
+}
