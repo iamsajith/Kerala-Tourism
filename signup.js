@@ -82,13 +82,12 @@ else if(passkey.test(passwordVal)){
   setErrorFor(password,'Password is not valid');
  }
 
-if(passwordVal !== cpasswordVal) {
-  setErrorFor(cpassword, 'Passwords does not match');
-  setErrorFor(password, 'Passwords does not match');
- }
-else if(cpasswordVal===''){
+if(cpasswordVal===''){
     setErrorFor(cpassword,'Password can\'t be blank');
 }
+else if(passwordVal !== cpasswordVal) {
+  setErrorFor(cpassword, 'Passwords does not match');
+ }
 else if(passkey.test(cpasswordVal)){
   setSuccessFor(cpassword);
  }
@@ -147,5 +146,3 @@ function checkPassword(password){
   }
 
 }
-
-alert(strengthBar.value);

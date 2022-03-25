@@ -268,14 +268,25 @@ nav{
 
 .control small {
 	color: #e74c3c;
-	position: absolute;
-	bottom: 0;
-	left: 0;
 	visibility: hidden;
+	position: absolute;
+	z-index: 10;
 }
 
 .control.error small {
 	visibility: visible;
+}
+.control progress{
+	color: #e74c3c;
+	visibility: visible;
+	position: absolute;
+	top: 100%;
+}
+.valid-status1{
+	color: #e74c3c;
+	visibility: visible;
+	position: absolute;
+	top: 70%;
 }
 
 
