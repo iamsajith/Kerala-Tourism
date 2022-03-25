@@ -135,7 +135,6 @@ function checkPassword(password){
     case 0: strengthBar.value = 0;
             break
     case 1: strengthBar.value = 20;
-            strengthBar.innerHTML="Weak"
             break
     case 2: strengthBar.value = 40;
             break
@@ -148,3 +147,5 @@ function checkPassword(password){
   }
 
 }
+
+alert(strengthBar.value);
