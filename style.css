@@ -1,241 +1,274 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Qwigley&display=swap');
 
-*{
- margin: 0;
- padding: 0;
-}
-:root{
---forum-bg : linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
-}
-body{
- font-family: 'Montserrat';
-}
-/* starting-page */
-#slideBG:hover{opacity: 1;}
-#slideBG{
- width: 100%;
- height: 100vh;
- opacity: 0.9;
- background-position: center center;
- background-size: cover;
- background-repeat: no-repeat;
- backface-visibility: hidden;
- animation: slideBg 16s linear infinite 0s;
- animation-timing-function: ease-in-out;
- background-image: url('./Images/1st/1635201.jpg');
-}
-@keyframes slideBg{
-0% {background-image: url('./Images/1st/1635237.jpg')}
-25% {background-image: url('./Images/1st/1635217.jpg')}
-50% {background-image: url('./Images/1st/1635283.jpg');}
-75% {background-image: url('./Images/1st/1635322.jpg');}
-100% {background-image: url('./Images/1st/1635201.jpg');}
-}
-.btn{
- margin-top: 10%;
+* {
+	margin: 0;
+	padding: 0;
 }
 
-#district{
- width: 100%;
- height: 100vh;
- background-color: #eee;
- padding: 2em;
+:root {
+	--forum-bg: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+}
+
+body {
+	font-family: 'Montserrat';
+}
+
+/* starting-page */
+#slideBG:hover {
+	opacity: 1;
+}
+
+#slideBG {
+	width: 100%;
+	height: 100vh;
+	opacity: 0.9;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	backface-visibility: hidden;
+	animation: slideBg 16s linear infinite 0s;
+	animation-timing-function: ease-in-out;
+	background-image: url('./Images/1st/1635201.jpg');
+}
+
+@keyframes slideBg {
+	0% {
+		background-image: url('./Images/1st/1635237.jpg')
+	}
+
+	25% {
+		background-image: url('./Images/1st/1635217.jpg')
+	}
+
+	50% {
+		background-image: url('./Images/1st/1635283.jpg');
+	}
+
+	75% {
+		background-image: url('./Images/1st/1635322.jpg');
+	}
+
+	100% {
+		background-image: url('./Images/1st/1635201.jpg');
+	}
+}
+
+.btn {
+	margin-top: 10%;
+}
+
+#district {
+	width: 100%;
+	height: 100vh;
+	background-color: #eee;
+	padding: 2em;
 }
 
 /* form */
 
-#login{
- background: var(--forum-bg);
-}
-.form-control{
- background: var(--forum-bg);
- border-bottom-left-radius: 0%;
- border-top-right-radius: 0%;
+#login {
+	background: var(--forum-bg);
 }
 
-.control input:focus{
- outline: 0;
- border-color: #777;
-}
-.control.success input{
- border-color: #2ecc71;
-}
-.control.error input{
- border-color: #e74c3c;
-}
-.control{
- position: relative;
-}
-.control small{
- font-size: small;
- color: #e74c3c;
- visibility: hidden;
-}
-.control.error small{
- visibility: hidden;
- position: absolute;
- bottom: 0;
- left: 0;
+.form-control {
+	background: var(--forum-bg);
+	border-bottom-left-radius: 0%;
+	border-top-right-radius: 0%;
 }
 
-#checkmark1,#checkmark2{
- position: absolute;
- right: 3%;
- top: 18%;
- visibility: hidden;
+.control input:focus {
+	outline: 0;
+	border-color: #777;
 }
-#checkmark1.success{
- visibility: visible;
- color: #2ecc71;
+
+.control.success input {
+	border-color: #2ecc71;
 }
-#checkmark2.error{
- visibility: visible;
- color:#e74c3c
+
+.control.error input {
+	border-color: #e74c3c;
+}
+
+.control {
+	position: relative;
+}
+
+.control small {
+	font-size: small;
+	color: #e74c3c;
+	visibility: hidden;
+}
+
+.control.error small {
+	visibility: hidden;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+#checkmark1,
+#checkmark2 {
+	position: absolute;
+	right: 3%;
+	top: 18%;
+	visibility: hidden;
+}
+
+#checkmark1.success {
+	visibility: visible;
+	color: #2ecc71;
+}
+
+#checkmark2.error {
+	visibility: visible;
+	color: #e74c3c
 }
 
 
-.margin-all{
- margin-top: 100px;
+.margin-all {
+	margin-top: 100px;
 }
 
 
-#places{
- width: 100%;
- height: 50%;
+#places {
+	width: 100%;
+	height: 50%;
 }
 
 /* navigation-bar */
-.navbar-brand{
- font-family: 'Qwigley', cursive;
- font-weight: bold;
- font-size: 2rem;
-}
-.nav-item{
- font-weight: 700;
- font-family: 'Montserrat', sans-serif;
-
-
-}
-.nav-item:hover{
- background-color:rgb(216, 107, 107)
+.navbar-brand {
+	font-family: 'Qwigley', cursive;
+	font-weight: bold;
+	font-size: 2rem;
 }
 
-#controls{
- position: absolute;
- bottom:2%;
- right: 0%;
- left: 0%;
-}
-#cap-img{
- height: 100%;
+.nav-item {
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
 }
 
-.img-text{
- color:rgb(0, 0, 0);
+.nav-item:hover {
+	background-color: rgb(216, 107, 107)
+}
+
+#controls {
+	position: absolute;
+	bottom: 2%;
+	right: 0%;
+	left: 0%;
+}
+
+#cap-img {
+	height: 100%;
+}
+
+.img-text {
+	color: rgb(0, 0, 0);
 
 }
 
-nav{
- z-index: 1;
+nav {
+	z-index: 1;
 }
 
-#img-op{
- opacity: 0.9;
- }
- #img-op:hover{
-  opacity: 1;
- }
+#img-op {
+	opacity: 0.9;
+}
+
+#img-op:hover {
+	opacity: 1;
+}
 
 
 .container {
- transform-style: preserve-3d
+	transform-style: preserve-3d
 }
 
 .container .box {
- position: relative;
- width: 300px;
- height: 300px;
- margin: 20px;
- transform-style: preserve-3d;
- perspective: 1000px;
- cursor: pointer
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin: 20px;
+	transform-style: preserve-3d;
+	perspective: 1000px;
+	cursor: pointer
 }
 
 .container .box .body {
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- transform-style: preserve-3d;
- transition: 0.9s ease
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: 0.9s ease
 }
 
 .container .box .body .imgContainer {
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- transform-style: preserve-3d
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d
 }
 
 .container .box .body .imgContainer img {
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- object-fit: cover
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover
 }
 
 .container .box .body .content {
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- background: #333;
- backface-visibility: hidden;
- transform-style: preserve-3d;
- transform: rotateY(180deg)
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #333;
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+	transform: rotateY(180deg)
 }
 
 .container .box:hover .body {
- transform: rotateY(180deg)
+	transform: rotateY(180deg)
 }
 
 .container .box .body .content div {
- transform-style: preserve-3d;
- padding: 20px;
- background: linear-gradient(45deg, #FE0061, #FFEB3B);
- transform: translateZ(100px)
+	transform-style: preserve-3d;
+	padding: 20px;
+	background: linear-gradient(45deg, #FE0061, #FFEB3B);
+	transform: translateZ(100px)
 }
 
 .container .box .body .content div h3 {
- letter-spacing: 1px
+	letter-spacing: 1px
 }
 
 ::-webkit-scrollbar {
- width: 6px;
+	width: 6px;
 }
 
 ::-webkit-scrollbar-track {
- box-shadow: inset 0 0 5px grey; 
- border-radius: 10px;
+	box-shadow: inset 0 0 5px grey;
+	border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
- background: rgb(43, 41, 41);
- border-radius: 20px;
+	background: rgb(43, 41, 41);
+	border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
- background: rgb(36, 35, 35); 
+	background: rgb(36, 35, 35);
 }
 
 .form {
-	padding: 30px 40px;	
+	padding: 30px 40px;
 }
 
 .control {
@@ -262,8 +295,9 @@ nav{
 .control.error input {
 	border-color: #e74c3c;
 }
-.control{
- position: relative;
+
+.control {
+	position: relative;
 }
 
 .control small {
@@ -276,17 +310,17 @@ nav{
 .control.error small {
 	visibility: visible;
 }
-.control progress{
+
+.control progress {
 	color: #e74c3c;
 	visibility: visible;
 	position: absolute;
 	top: 100%;
 }
-.valid-status1{
+
+.valid-status1 {
 	color: #e74c3c;
 	visibility: visible;
 	position: absolute;
 	top: 70%;
 }
-
-
